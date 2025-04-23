@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        h1 {
+            font-size: 22px;
+            color: white;
+            background-color: rgb(126, 72, 7);
+        }
+
+        body {
+            background-color: bisque;
+            font-family: cursive;
+        }
+    </style>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1>Welcome to HTML</h1>
+    <br>
+    <h2>Working with HTML is exciting</h2>
+    <br>
+    <p>We can add styles to our HTML</p>
+    <br>
+    <p id="demo">JavaScript can hide HTML elements.</p>
+
+<button type="button" onclick="document.getElementById('demo').style.display='none'">Click Me!</button>
+
+    
+    <br>
+    <br>
+    Get current Time and Date
+    <br>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+        Time & Date
+    </button>
+    <script>
+
+        alert("This message is from JavaScript!");
+
+    </script>
+    <p id="demo"></p>
+</body>
+
+</html>

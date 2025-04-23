@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- The DOCTYPE declaration above is to inform browsers that we intend to use the standard HTML5 for this project-->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Autobiography</title>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="mainstyle.css">
+    <link rel="stylesheet" href="pop-upstyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+    <script>
+        // When the user clicks on <div>, open the popup
+        function myFunction() {
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="calculator.html">Calculator</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1 id="h1-style">Story Creator</h1>
+        <p><a href="#copyright"><i class="fa-solid fa-chevron-down"></i>Jump to copyright</a></p>
+        <main>
+            <div class="pulse"></div>
+            <h2 class="auto-bio">Autobiography</h2>
+            <article class="article-top">
+                <p>Working with HTML and CSS has been an amazing journey for me.
+                    With just about 20 years in Technology and Education,
+                    I have contributed to lots of projects that solved real world problems.
+                    <!-- Code for Javascript Pop-up -->
+                <div class="popup" onclick="myFunction()">Read more..
+                    <span class="popuptext" id="myPopup">There is a repository of resources
+                        that can help beginners and intermediated in their coding journey if
+                        they so need it.</span>
+                </div>
+
+                </p>
+            </article>
+            <figure>
+                <figcaption>Caption</figcaption>
+                <img src="https://rb.gy/t62twv" alt="portfolio" class="img-style">
+            </figure>
+            <article class="article-bottom">
+                <p>Working with HTML and CSS has been an amazing journey for me.
+                    With just about 20 years in Technology and Education,
+                    I have contributed to lots of projects that solved real world problems.
+                </p>
+            </article>
+            <div class="button">
+                <button class="email-button"><a href="mailto:brown-frank@live.com">Send a mail</a></button>
+                <button class="call-button"><a href="tel:08186040126">Give us a Call</a></button>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <p id="copyright">Copyright 2024 &copy;</p>
+    </footer>
+</body>
+
+</html>
